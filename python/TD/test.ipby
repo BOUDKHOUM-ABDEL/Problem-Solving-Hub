@@ -1,0 +1,8 @@
+my_list = []
+length_list = 10
+
+for i in range(length_list):
+    value = int(input(f"Enter the {i+1}th element of the list: "))
+    my_list.append(value)
+
+print("Your list is:", my_list)
