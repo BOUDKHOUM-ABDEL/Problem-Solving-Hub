@@ -55,7 +55,15 @@ for key,value in dic_letters.items():
     print(f"{key} : {value}")
 # o Phrase inversée mot par mot (sans split() inversé directement):
 phrase_inversee = ""
-
+word = ""
+words = []
+for letter in phrase :
+    if letter != " ":
+        word+=letter
+        
+    else:
+        words.append(word)
+        word = ""
 
 print(phrase_inversee)
 # 3. Vérifie si la phrase est un pangramme (contient toutes les lettres de l’alphabet).
