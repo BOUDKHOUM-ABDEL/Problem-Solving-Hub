@@ -1,8 +1,8 @@
 ﻿# Exercice 3 : 
 # Écrire un programme qui : 
 # 1. Lit une phrase saisie par l’utilisateur:
-phrase = input("Enter a sentences : ")
 
+phrase = input("Enter a sentences : ")
 
 # 2. Affiche : 
 # o Nombre de mots:
@@ -46,6 +46,7 @@ print("Mots les plus courts :", shortest_words)
 
 
 # o Fréquence de chaque lettre (sans collections.Counter): 
+
 letters = [letter for letter in phrase.upper() if letter !=" "]
 
 dic_letters =dict.fromkeys(set(letters),0)
@@ -53,6 +54,7 @@ for letter in letters:
     dic_letters[letter]+=1
 for key,value in dic_letters.items():
     print(f"{key} : {value}")
+
 # o Phrase inversée mot par mot (sans split() inversé directement):
 phrase_inversee = ""
 word = ""
@@ -66,7 +68,9 @@ for letter in phrase :
         word = ""
 
 print(phrase_inversee)
+
 # 3. Vérifie si la phrase est un pangramme (contient toutes les lettres de l’alphabet).
+
 is_pangramme = True
 letters = set(letters)
 
