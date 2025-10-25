@@ -1,13 +1,13 @@
-# Exercice 3 : 
-# Écrire un programme qui : 
-# 1. Lit une phrase saisie par l’utilisateur:
+ï»¿# Exercice 3 : 
+# Ã‰crire un programme qui : 
+# 1. Lit une phrase saisie par lâ€™utilisateur:
 phrase = input("Enter a sentences : ")
 
 
 # 2. Affiche : 
 # o Nombre de mots:
 #-----------------------------------------------------
-#mots = phrase.split()  # Sépare la phrase en mots
+#mots = phrase.split()  # SÃ©pare la phrase en mots
 #nbr_word = len(mots)   # Compte le nombre de mots
 #-----------------------------------------------------
 nbr_word=1
@@ -17,7 +17,7 @@ for char in phrase :
 print(nbr_word)
 
 # o Mot le plus long et le plus court:
-words = phrase.split()# Sépare la phrase en mots
+words = phrase.split()# SÃ©pare la phrase en mots
 
 
 
@@ -45,6 +45,24 @@ print("Mots les plus longs :", longest_words)
 print("Mots les plus courts :", shortest_words)
 
 
-# o Fréquence de chaque lettre (sans collections.Counter): 
-# o Phrase inversée mot par mot (sans split() inversé directement). 
-# 3. Vérifie si la phrase est un pangramme (contient toutes les lettres de l’alphabet).
+# o FrÃ©quence de chaque lettre (sans collections.Counter): 
+letters = [letter for letter in phrase.upper() if letter !=" "]
+
+dic_letters =dict.fromkeys(set(letters),0)
+for letter in letters:
+    dic_letters[letter]+=1
+for key,value in dic_letters.items():
+    print(f"{key} : {value}")
+# o Phrase inversÃ©e mot par mot (sans split() inversÃ© directement):
+phrase_inversee = ""
+
+
+print(phrase_inversee)
+# 3. VÃ©rifie si la phrase est un pangramme (contient toutes les lettres de lâ€™alphabet).
+is_pangramme = True
+letters = set(letters)
+
+if len(letters)==26:
+    print("La phrase est un pangramme.")
+else:
+    print("La phrase n'est pas un pangramme.")
