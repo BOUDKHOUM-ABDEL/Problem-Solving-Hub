@@ -2,7 +2,7 @@
 # 1. Saisir deux ensembles de nombres (par exemple A et B):
 
 # 2. Afficher : 
-# o Eléments communs (intersection), 
+# o Eléments communs (intersection):
 # o Eléments uniques à A et à B, 
 # o Eléments pairs dans l’union des deux ensembles, 
 # o Eléments présents dans un seul ensemble. 

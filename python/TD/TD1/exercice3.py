@@ -59,15 +59,16 @@ for key,value in dic_letters.items():
 phrase_inversee = ""
 word = ""
 words = []
+length = len(phrase)
 for letter in phrase :
     if letter != " ":
         word+=letter
         
-    else:
-        words.append(word)
+    elif letter == " " :
+        phrase_inversee=word +" "+phrase_inversee
         word = ""
 
-print(phrase_inversee)
+print(word+" "+phrase_inversee)
 
 # 3. Vérifie si la phrase est un pangramme (contient toutes les lettres de l’alphabet).
 
